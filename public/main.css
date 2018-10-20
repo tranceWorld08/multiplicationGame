@@ -1,0 +1,176 @@
+html{
+    
+    height: 100%;
+    background-image: url(../img/backgroundImg.jpg);
+    background-size: cover;
+    /*background: radial-gradient(circle, #fff, #ccc);
+    background: -webkit-radial-gradient(circle, #fff, #ccc);
+    background: -o-radial-gradient(circle, #fff, #ccc);
+    background: -moz-radial-gradient(circle, #fff, #ccc);*/
+}
+
+#mainDiv{
+    width: 600px;
+    height: 440px;
+    margin: 100px auto;
+    background-color: rgba(240, 200, 147, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 0 0 #e0a751;
+    -moz-box-shadow: 0 4px 0 0 #e0a751;
+    -webkit-box-shadow: 0 4px 0 0 #e0a751;
+}
+
+#score{
+    
+    padding: 11px;
+    position: absolute;
+    background-color: #F1FF92;
+    color: #888E5F;
+    left: 550px;
+    box-shadow: 0 4px 0 #9da853;
+    -moz-box-shadow: 0 4px 0 #9da853;
+    -webkit-box-shadow: 0 4px 0 #9da853;
+    
+}
+
+#correct{
+    position:absolute;
+    background-color:#26f25d;
+    padding: 11px;
+    left:300px;
+    color: white;
+    display: none;
+}
+
+#wrong{
+    position:absolute;
+    background-color:#f24a37;
+    padding:11px;
+    color: white;
+    left: 300px;
+    display:none;
+}
+
+#question{
+    width: 500px;
+    height: 150px;
+    text-align: center; 
+    background-color: #b99ef7;
+    margin: 70px auto 10px auto;
+    font-size: 100px;
+    font-family: cursive, Arial;
+    box-shadow: 0 4px 0 #6f2b72;
+    -moz-box-shadow: 0 4px 0 #6f2b72;
+    -webkit-box-shadow: 0 4px 0 #6f2b72;
+    
+}
+
+#instruction{
+    width: 500px;
+    height:50px;
+    background-color: #B481D9;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 45px;
+    box-shadow: 0 4px 0 #8153a8;
+    -moz-box-shadow: 0 4px 0 #8153a8;
+    -webkit-box-shadow: 0 4px 0 #8153a8;
+}
+
+#choices{
+    width: 500px;
+    height: 100px;
+    margin: 15px auto;
+}
+
+.box{
+    width: 95px;
+    height: 95px;
+    background-color: white;
+    float: left;
+    margin-right: 39px;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 90px;
+    position:relative;
+    transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.box:hover, #startreset:hover{
+    background-color:#9C89F6;
+    color:white;
+    box-shadow: 0 4px 0 #6f2b72;
+    -webkit-box-shadow: 0 4px 0 #6f2b72;
+    -moz-box-shadow: 0 4px 0 #6f2b72;
+}
+
+.box:active, #startreset:active{
+    box-shadow: 0 0 #6B54D3;
+    -moz-box-shadow: 0 0 #6B54D3;
+    -webkit-box-shadow: 0 0 #6B54D3;
+    top: 4px;
+}
+
+#box4{
+    margin-right: 0;
+}
+
+#startreset{
+    width:85px;
+    padding: 11px;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+    margin:0 auto;
+    position:relative;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+#timeremaining{
+    width:155px;
+    padding:10px;
+    position:absolute;
+    top:430px;
+    left: 445px;
+    background-color:rgba(224, 167, 81, 0.8);
+    border-radius: 3px;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+    /* visibility: hidden; */
+    display:none;
+}
+
+#gameOver{
+    height:200px;
+    width:500px;
+    color: white;
+    font-size:2.5em;
+    text-align:center;
+    text-transform:uppercase;
+    position:absolute;
+    top:100px;
+    left: 75px;
+    z-index: 2;
+    display:none;
+    background: linear-gradient(#F3CA6B, #F3706C);
+    background: -webkit-linear-gradient(#F3CA6B, #F3706C);
+    background: -o-linear-gradient(#F3CA6B, #F3706C);
+    background: -moz-linear-gradient(#F3CA6B, #F3706C);
+}
